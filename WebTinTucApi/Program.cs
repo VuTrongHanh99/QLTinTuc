@@ -1,5 +1,6 @@
 ﻿using Data.SqlServer.Context;
 using Data.SqlServer.Data;
+using Infrastructure.IoC;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -61,6 +62,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 #region    Cấu hình DataContext
+//Nạp pendency vao project
+DependencyContainer.RegisterIoC(builder.Services, builder.Configuration);
 //Api cho nhiều trình duyệt, ứng dụng khác sử dụng được bằng các cấu hình
 builder.Services.AddCors(options =>
     options.AddDefaultPolicy(policy =>

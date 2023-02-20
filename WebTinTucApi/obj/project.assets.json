@@ -2934,10 +2934,37 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Core.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Core.Domain": "1.0.0",
+          "Data.SqlServer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Application.dll": {}
+        }
+      },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
+        }
+      },
       "Data.SqlServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Core.Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore": "6.0.10",
@@ -2949,6 +2976,22 @@
         },
         "runtime": {
           "bin/placeholder/Data.SqlServer.dll": {}
+        }
+      },
+      "Infrastructure.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "Core.Application": "1.0.0",
+          "Data.SqlServer": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.IoC.dll": {}
         }
       },
       "NetCore.Shared/1.0.0": {
@@ -9209,10 +9252,25 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "path": "../Core.Application/Core.Application.csproj",
+      "msbuildProject": "../Core.Application/Core.Application.csproj"
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../Core.Domain/Core.Domain.csproj"
+    },
     "Data.SqlServer/1.0.0": {
       "type": "project",
       "path": "../Data.SqlServer/Data.SqlServer.csproj",
       "msbuildProject": "../Data.SqlServer/Data.SqlServer.csproj"
+    },
+    "Infrastructure.IoC/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure.IoC/Infrastructure.IoC.csproj",
+      "msbuildProject": "../Infrastructure.IoC/Infrastructure.IoC.csproj"
     },
     "NetCore.Shared/1.0.0": {
       "type": "project",
@@ -9224,6 +9282,7 @@
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Data.SqlServer >= 1.0.0",
+      "Infrastructure.IoC >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.10",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.10",
@@ -9274,6 +9333,9 @@
           "projectReferences": {
             "C:\\Users\\Admin\\Desktop\\WebTinTuc\\Data.SqlServer\\Data.SqlServer.csproj": {
               "projectPath": "C:\\Users\\Admin\\Desktop\\WebTinTuc\\Data.SqlServer\\Data.SqlServer.csproj"
+            },
+            "C:\\Users\\Admin\\Desktop\\WebTinTuc\\Infrastructure.IoC\\Infrastructure.IoC.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\WebTinTuc\\Infrastructure.IoC\\Infrastructure.IoC.csproj"
             }
           }
         }

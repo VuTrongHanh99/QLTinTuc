@@ -46,3 +46,5 @@ C:\Users\Admin\Desktop\WebTinTuc\Data.SqlServer\obj\Debug\net6.0\refint\Data.Sql
 C:\Users\Admin\Desktop\WebTinTuc\Data.SqlServer\obj\Debug\net6.0\Data.SqlServer.pdb
 C:\Users\Admin\Desktop\WebTinTuc\Data.SqlServer\obj\Debug\net6.0\Data.SqlServer.genruntimeconfig.cache
 C:\Users\Admin\Desktop\WebTinTuc\Data.SqlServer\obj\Debug\net6.0\ref\Data.SqlServer.dll
+C:\Users\Admin\Desktop\WebTinTuc\Data.SqlServer\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\Admin\Desktop\WebTinTuc\Data.SqlServer\bin\Debug\net6.0\Core.Domain.pdb

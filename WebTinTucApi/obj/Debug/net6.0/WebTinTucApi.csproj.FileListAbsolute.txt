@@ -87,3 +87,9 @@ C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\obj\Debug\net6.0\refint\WebTinTucA
 C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\obj\Debug\net6.0\WebTinTucApi.pdb
 C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\obj\Debug\net6.0\WebTinTucApi.genruntimeconfig.cache
 C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\obj\Debug\net6.0\ref\WebTinTucApi.dll
+C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\bin\Debug\net6.0\Core.Application.dll
+C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\bin\Debug\net6.0\Core.Domain.dll
+C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\bin\Debug\net6.0\Infrastructure.IoC.dll
+C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\bin\Debug\net6.0\Infrastructure.IoC.pdb
+C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\Admin\Desktop\WebTinTuc\WebTinTucApi\bin\Debug\net6.0\Core.Domain.pdb

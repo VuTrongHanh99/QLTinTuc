@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Data.SqlServer": "1.0.0",
+          "Infrastructure.IoC": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
@@ -1833,8 +1834,25 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "Core.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Core.Domain": "1.0.0",
+          "Data.SqlServer": "1.0.0"
+        },
+        "runtime": {
+          "Core.Application.dll": {}
+        }
+      },
+      "Core.Domain/1.0.0": {
+        "runtime": {
+          "Core.Domain.dll": {}
+        }
+      },
       "Data.SqlServer/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Core.Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore": "6.0.10",
@@ -1843,6 +1861,17 @@
         },
         "runtime": {
           "Data.SqlServer.dll": {}
+        }
+      },
+      "Infrastructure.IoC/1.0.0": {
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "Core.Application": "1.0.0",
+          "Data.SqlServer": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "Infrastructure.IoC.dll": {}
         }
       },
       "NetCore.Shared/1.0.0": {
@@ -3195,7 +3224,22 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Data.SqlServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure.IoC/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
