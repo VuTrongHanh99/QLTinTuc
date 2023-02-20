@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebTinTuc.BackEnd/1.0.0": {
+        "runtime": {
+          "WebTinTuc.BackEnd.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebTinTuc.BackEnd/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

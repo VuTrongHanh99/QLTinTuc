@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lml209JyAAe6jBHlaJdR0nScFz27acZwljyGVw33Wtwn1KnEtWRD1W55rhGFgjFrlZWuV3olq2+VVSOnV4tT+g==",
+  "dgSpecHash": "/0705RztlOfEwUOLYIwvKDsNLSBfAnmYVrhToaQyrOvGsx9/6lFISYXL3cWywHpFq07XAG7AHKmvuISSnK39Qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\WebTinTuc\\WebTinTuc\\WebTinTuc.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\WebTinTuc\\WebTinTuc\\WebTinTuc.BackEnd.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTinTuc", "WebTinTuc\WebTinTuc.csproj", "{4EBE9E61-1537-44AC-8BF2-4DE405917E7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTinTuc.BackEnd", "WebTinTuc\WebTinTuc.BackEnd.csproj", "{4EBE9E61-1537-44AC-8BF2-4DE405917E7A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{637FF16C-DC10-43BA-B5AA-65436BEBF263}"
 EndProject
