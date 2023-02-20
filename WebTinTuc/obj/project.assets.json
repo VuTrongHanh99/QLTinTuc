@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\TinTuc\\WebTinTuc\\WebTinTuc\\WebTinTuc.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\WebTinTuc\\WebTinTuc\\WebTinTuc.csproj",
       "projectName": "WebTinTuc",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\TinTuc\\WebTinTuc\\WebTinTuc\\WebTinTuc.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\WebTinTuc\\WebTinTuc\\WebTinTuc.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\TinTuc\\WebTinTuc\\WebTinTuc\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\WebTinTuc\\WebTinTuc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
