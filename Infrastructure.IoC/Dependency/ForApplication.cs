@@ -1,4 +1,6 @@
-﻿using Core.Application.ModelMapping;
+﻿using Core.Application.Interfaces;
+using Core.Application.ModelMapping;
+using Core.Application.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -15,7 +17,7 @@ namespace Infrastructure.IoC.Dependency
         {
             services.AddAutoMapper(typeof(AutoMapperProfile));
 
-            //services.AddScoped<IFileServices, FileServices>();
+            services.AddScoped<ITheLoaiServices,TheLoaiServices>();
             
         }
     }

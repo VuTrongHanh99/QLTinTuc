@@ -79,10 +79,6 @@ builder.Services.AddDbContext<DataContext>(options => {
 #region config AUTO Map Map giữa ModelEntities và DataSql Database
 builder.Services.AddAutoMapper(typeof(Program));
 #endregion
-#region  Đăng ký để sử dụng Repository
-//Life cycle DI: AddSignleton(), AddTransient(), AddScoped()
-//builder.Services.AddScoped<IAccountRepository, AccountRepository>();
-#endregion
 #region  KHai báo lớp đăng nhập hệ thống Auth
 builder.Services.AddAuthentication(options =>
 {

@@ -1,4 +1,5 @@
-﻿using Core.Domain.Entities;
+﻿using Core.Application.Interfaces;
+using Core.Domain.Entities;
 using Core.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,31 +9,24 @@ namespace WebTinTucApi.Controllers
     [ApiController]
     public class TheLoaiController : Controller
     {
-        private readonly ITheLoaiRepository _bookRepository;
-        private readonly ILogger<TheLoaiController> _logger;
+        private readonly ITheLoaiServices _services;
+        
 
-        public TheLoaiController(ITheLoaiRepository repo, ILogger<TheLoaiController> logger)
+        public TheLoaiController(ITheLoaiServices theLoaiServices)
         {
-            _bookRepository = repo;
-            _logger = logger;
+            _services = theLoaiServices;
         }
         [HttpGet]
-        public async Task<IActionResult> GetAllBooks()
+        public async Task<IActionResult> GetAll()
         {
-            try
-            {
-                return Ok(await _bookRepository.GetAllBooksAsync());
-            }
-            catch
-            {
-                return BadRequest();
-            }
+            var book = await _services.GetAllService();
+            return book == null ? NotFound() : Ok(book);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBookById(int id)
         {
-            var book = await _bookRepository.GetBookAsync(id);
+            var book = await _services.GetServiceById(id);
             return book == null ? NotFound() : Ok(book);
         }
 
@@ -41,9 +35,9 @@ namespace WebTinTucApi.Controllers
         {
             try
             {
-                var newBookId = await _bookRepository.AddBookAsync(model);
-                var book = await _bookRepository.GetBookAsync(newBookId);
-                return book == null ? NotFound() : Ok(book);
+                var newBookId = await _services.AddService(model);
+                //var book = await _services.GetServiceById(model.CategoryId);
+                return  Ok(newBookId);
             }
             catch
             {
@@ -58,14 +52,14 @@ namespace WebTinTucApi.Controllers
             {
                 return NotFound();
             }
-            await _bookRepository.UpdateBookAsync(id, model);
+            await _services.UpdateService(id, model);
             return Ok();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook([FromRoute] int id)
         {
-            await _bookRepository.DeleteBookAsync(id);
+            await _services.DeleteService(id);
             return Ok();
         }
     }

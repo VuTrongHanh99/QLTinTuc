@@ -18,7 +18,10 @@ namespace Infrastructure.IoC.Dependency
         {
             services.AddDbContext<DataContext>(options => options.UseSqlServer(configurations.GetConnectionString("ProductStore")));
 
+            #region  Đăng ký để sử dụng Repository
+            //Life cycle DI: AddSignleton(), AddTransient(), AddScoped()
             services.AddScoped<ITheLoaiRepository, TheLoaiRepository>();
+            #endregion
         }
     }
 }
