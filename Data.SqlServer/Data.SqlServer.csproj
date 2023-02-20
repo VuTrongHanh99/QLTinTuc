@@ -19,7 +19,4 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Infrastrucsture.NetCore.Shared\NetCore.Shared.csproj" />
 	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Systems\Context\Bussiness\" />
-	</ItemGroup>
 </Project>
