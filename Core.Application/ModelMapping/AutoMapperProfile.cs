@@ -15,6 +15,7 @@ namespace Core.Application.ModelMapping
         {
             //map 2 đảo chiều sử dụng các tên view tương đương
             CreateMap<TheLoai, TheLoaiEntity>().ReverseMap();
+            CreateMap<MenuMain, MenuMainEntity>().ReverseMap();
         }
     }
 }

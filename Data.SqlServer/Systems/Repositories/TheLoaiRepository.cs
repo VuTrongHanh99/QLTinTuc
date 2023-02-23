@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Core.Domain.Entities;
-using Core.Domain.Interfaces;
+using Core.Domain.IResponsitories;
 using Data.SqlServer.Context;
 using Data.SqlServer.Data;
 using Microsoft.EntityFrameworkCore;

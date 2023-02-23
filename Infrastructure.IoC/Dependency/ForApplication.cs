@@ -18,6 +18,7 @@ namespace Infrastructure.IoC.Dependency
             services.AddAutoMapper(typeof(AutoMapperProfile));
 
             services.AddScoped<ITheLoaiServices,TheLoaiServices>();
+            services.AddScoped<IMenuMainServices, MenuMainServices>();
             
         }
     }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Domain.Interfaces
+namespace Core.Domain.IResponsitories
 {
     public interface ITheLoaiRepository
     {

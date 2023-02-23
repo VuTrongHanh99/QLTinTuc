@@ -1,6 +1,6 @@
 ﻿using Core.Application.Interfaces;
 using Core.Domain.Entities;
-using Core.Domain.Interfaces;
+using Core.Domain.IResponsitories;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;

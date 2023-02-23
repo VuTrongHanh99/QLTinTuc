@@ -1,0 +1,56 @@
+﻿@using Core.Domain.Entities
+@model Core.Domain.Entities.MenuMainEntity
+@{
+    ViewData["Title"] = "Menu Main";
+    Layout = "_Layout";
+} 
+
+
+<p class="h3">Add Menu Main</p>
+<hr />
+<form asp-controller="MenuMain" asp-action="Create" enctype="multipart/form-data">
+    <div class="card-body">
+        <div class="form-group">
+            <label >Tên Menu</label>
+            <input asp-for="MenuName" class="form-control" id="exampleInputEmail1" placeholder="Enter menu">
+        </div>
+        <div class="form-group">
+            <label>Chọn danh muc cha</label>
+            <select asp-for="ParentId" class="form-control">
+                <option value="0">Danh muc gốc</option>
+                @foreach (var  item in ViewBag.data)
+                {
+                    <option value="@item.GetType().GetProperties()[0].GetValue(item)">
+                        @item.GetType().GetProperties()[1].GetValue(item)</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Url</label>
+            <input asp-for="MenuUrl" class="form-control" id="exampleInputEmail1" placeholder="Enter Url">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">Status</label>
+            <div class="input-group">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="exampleInputFile">
+                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                </div>
+                <div class="input-group-append">
+                    <span class="input-group-text">Upload</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Tiếp tục tạo menu</label>
+        </div>
+    </div>
+    <!-- /.card-body -->
+
+    <div class="card-footer">
+        <button type="submit" value="Create" class="btn btn-primary">Tạo menu</button>
+        <button asp-action="Index" value="Create" class="btn btn-primary">Back to List</button>
+    </div>
+</form>
+

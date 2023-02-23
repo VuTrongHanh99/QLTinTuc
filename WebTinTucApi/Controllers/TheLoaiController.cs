@@ -1,6 +1,5 @@
 ﻿using Core.Application.Interfaces;
 using Core.Domain.Entities;
-using Core.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebTinTucApi.Controllers
@@ -36,7 +35,6 @@ namespace WebTinTucApi.Controllers
             try
             {
                 var newBookId = await _services.AddService(model);
-                //var book = await _services.GetServiceById(model.CategoryId);
                 return  Ok(newBookId);
             }
             catch
