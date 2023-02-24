@@ -226,7 +226,7 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             MenuId = 1,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9258),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9413),
                             Description = "",
                             MenuName = "Trang chủ",
                             MenuUrl = "/#",
@@ -237,7 +237,7 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             MenuId = 2,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9260),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9415),
                             Description = "",
                             MenuName = "Giới thiệu",
                             MenuUrl = "/gioi-thieu",
@@ -248,7 +248,7 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             MenuId = 3,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9262),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9417),
                             Description = "",
                             MenuName = "Trang 3",
                             MenuUrl = "/trang3",
@@ -259,7 +259,7 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             MenuId = 4,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9263),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9418),
                             Description = "",
                             MenuName = "Trang 34",
                             MenuUrl = "/trang4",
@@ -270,7 +270,7 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             MenuId = 5,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9264),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9419),
                             Description = "",
                             MenuName = "Trang 35",
                             MenuUrl = "/trang5",
@@ -377,9 +377,9 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             EventId = 1,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9102),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9274),
                             Description = "",
-                            EventDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9101),
+                            EventDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9274),
                             EventImageUrl = "a.png",
                             EventName = "Sự kiện 11",
                             Order = 0,
@@ -388,9 +388,9 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             EventId = 2,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9104),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9278),
                             Description = "",
-                            EventDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9103),
+                            EventDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9277),
                             EventImageUrl = "a.png",
                             EventName = "Sự kiện 12",
                             Order = 0,
@@ -399,9 +399,9 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             EventId = 3,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9106),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9280),
                             Description = "",
-                            EventDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9106),
+                            EventDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9280),
                             EventImageUrl = "a.png",
                             EventName = "Sự kiện 13",
                             Order = 0,
@@ -410,9 +410,9 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             EventId = 4,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9108),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9282),
                             Description = "",
-                            EventDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9108),
+                            EventDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9282),
                             EventImageUrl = "a.png",
                             EventName = "Sự kiện 14",
                             Order = 0,
@@ -421,9 +421,9 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             EventId = 5,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9111),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9284),
                             Description = "",
-                            EventDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9110),
+                            EventDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9284),
                             EventImageUrl = "a.png",
                             EventName = "Sự kiện 15",
                             Order = 0,
@@ -432,9 +432,9 @@ namespace Data.SqlServer.Migrations
                         new
                         {
                             EventId = 6,
-                            CreatedDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9113),
+                            CreatedDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9286),
                             Description = "",
-                            EventDate = new DateTime(2023, 2, 20, 11, 31, 11, 444, DateTimeKind.Local).AddTicks(9112),
+                            EventDate = new DateTime(2023, 2, 23, 15, 45, 52, 333, DateTimeKind.Local).AddTicks(9286),
                             EventImageUrl = "a.png",
                             EventName = "Sự kiện 16",
                             Order = 0,

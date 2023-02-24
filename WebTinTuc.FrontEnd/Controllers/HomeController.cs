@@ -2,6 +2,8 @@
 using Core.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+
+
 namespace WebTinTuc.FrontEnd.Controllers
 {
     public class HomeController : Controller
@@ -19,8 +21,20 @@ namespace WebTinTuc.FrontEnd.Controllers
         {
             var results = new List<MenuMainEntity>();
             results = await _services.GetAllService();
-            //option 3: using Model
-            return View(results);
+            ViewData["MenuMain"] = results;
+            ////option 3: using Model
+            //return View(results);
+
+            return View();
+        }
+
+        
+        public  async Task<List<MenuMainEntity>> GetMenuMains()
+        {
+            var results = new List<MenuMainEntity>();
+            results =await  _services.GetAllService();
+            
+            return results;
         }
     }
 }

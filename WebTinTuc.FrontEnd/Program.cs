@@ -31,6 +31,14 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.MapControllerRoute(
+    name: "TinTuc",
+    pattern: "TinTuc",
+    new
+    {
+        controller = "TinTuc",
+        action = "Index"
+    });
 
 app.MapControllerRoute(
     name: "default",
